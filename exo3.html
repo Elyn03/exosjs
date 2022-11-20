@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #4a222c; color: #fff;">
+    <h1 style="padding-bottom:10px; border-bottom: 3px solid #fff;">Exercice 3 : Jeu de Nim</h1>
+    <div>
+        <p>2 joueurs : Enlever chacun son tour 1 à 3 batôns. Celui qui enleve le dernier bâton blanc perd.</p>
+    </div>
+
+    <div class="contenu">
+
+      <h5 id="joueur"></h5>
+      
+      <div id="allumImg">
+        Choisir le nombre d'allumettes :
+      </div>
+      
+      <p id="pfeu">
+        <table>
+          <tr id="trfeu">
+           <td><img src="img/jeu.png" alt="flamme"/></td>
+          </tr>
+        </table>
+      </p>
+
+      <div id="ini">
+        <button type="button" onclick="flam('trfeu','allumImg','nb')"> baton </button>
+        <label> le jeu avec</label>
+        <input type="text" id="nb" name="nb" size="2" value="20"/>
+        <label>batons</label>
+        <span id="error1"></span>
+      </div>
+      
+    </div>
+
+    <script src="exo3.js"></script>
+
+</body>
+</html>
